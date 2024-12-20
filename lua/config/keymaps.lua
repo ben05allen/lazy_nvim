@@ -7,7 +7,7 @@ vim.keymap.set({'i', 'v'}, 'jj', '<Esc>', { noremap = true })
 vim.keymap.set('n', ';', ':', { noremap = true })
 
 -- faster window navigation
-vim.keymap.set('n', '<C-h>', ':wincmd h', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-j>', ':wincmd j', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-k>', ':wincmd k', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-l>', ':wincmd l', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>', { noremap = true, silent = true })
