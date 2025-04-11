@@ -7,14 +7,16 @@ vim.keymap.set({'i', 'v'}, 'jj', '<Esc>', { noremap = true })
 vim.keymap.set('n', ';', ':', { noremap = true})
 
 -- Faster window navigation
-vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', { noremap = true})
-vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { noremap = true})
-vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', { noremap = true})
-vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', { noremap = true})
+vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', { noremap = true })
+vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { noremap = true })
+vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', { noremap = true })
+vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', { noremap = true })
 
 -- Open neotree filesystem
 vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>')
 
--- LSP
+-- Go biolerplate
+vim.keymap.set('i', '<C-e>',"if err != nil {<CR>}<Esc>O", { noremap = true })
+
 -- shift K for hover information
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
