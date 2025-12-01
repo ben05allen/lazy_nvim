@@ -9,3 +9,4 @@ data
 
 # lock file
 lazy-lock.json
+pack/
