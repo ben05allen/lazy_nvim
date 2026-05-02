@@ -3,10 +3,6 @@ return {
     "stevearc/conform.nvim",
     event = { "BufReadPre", "BufNewFile" },
     opts = {
-      format_on_save = {
-        timeout_ms = 500,
-        lsp_fallback = true, -- fallback to LSP (clangd) if no formatter
-      },
       formatters_by_ft = {
         c = { "clang_format" },
         cpp = { "clang_format" },
