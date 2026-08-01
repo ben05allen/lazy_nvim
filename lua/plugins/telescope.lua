@@ -23,7 +23,7 @@ return  {
     keys = {
       {
         '<leader>sB',
-        ':Telescope file_browser path=%:p:h=%:p:h<cr>',
+        ':Telescope file_browser path=%:p:h<cr>',
         desc = 'Browse Files',
       },
     },
