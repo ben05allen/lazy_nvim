@@ -7,6 +7,10 @@ return {
         timeout_ms = 30000,
       },
       formatters_by_ft = {
+        -- Runs ruff check --select=I001 --fix (sort imports), then ruff format.
+        -- Takes precedence over the ruff LSP formatter because LazyVim formats
+        -- via conform first when the ft has conform formatters.
+        python = { "ruff_organize_imports", "ruff_format" },
         c = { "clang_format" },
         cpp = { "clang_format" },
         objc = { "clang_format" },
